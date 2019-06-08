@@ -3,14 +3,14 @@
     "name": "Homebridge",
     "username": "AA:BB:CC:DD:EE:FF",
     "port": 51826,
-    "pin": "333-33-333"
+    "pin": "929-22-208"
   },
   "description": "balenaCloud app for Homebridge",
   "accessories": [],
   "platforms": [
     {
       "platform": "config",
-      "port": 80,
+      "port": 8077,
       "name": "Homebridge Config UI",
       "restart": "bash ./balena-restart.sh"
     }
