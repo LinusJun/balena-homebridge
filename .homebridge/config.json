@@ -3,7 +3,7 @@
     "name": "Homebridge",
     "username": "AA:BB:CC:DD:EE:FF",
     "port": 51826,
-    "pin": "929-22-208"
+    "pin": "333-22-333"
   },
   "description": "balenaCloud app for Homebridge",
   "accessories": [],
