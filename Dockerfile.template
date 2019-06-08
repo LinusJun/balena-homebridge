@@ -20,7 +20,6 @@ ENV DEVICE_TYPE=%%BALENA_MACHINE_NAME%%
 RUN apt-get update \
   && apt-get install -yq --no-install-recommends \
     curl \
-    dnsmasq \
     jq \
     wget \
     git \
@@ -40,10 +39,10 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 # Install balena-wifi-connect
-RUN curl https://api.github.com/repos/balena-io/wifi-connect/releases/latest -s \
-  | grep -hoP 'browser_download_url": "\K.*%%BALENA_ARCH%%\.tar\.gz' \
-  | xargs -n1 curl -Ls \
-  | tar -xvz -C /usr/src/app/
+#RUN curl https://api.github.com/repos/balena-io/wifi-connect/releases/latest -s \
+#  | grep -hoP 'browser_download_url": "\K.*%%BALENA_ARCH%%\.tar\.gz' \
+#  | xargs -n1 curl -Ls \
+#  | tar -xvz -C /usr/src/app/
 
 # Install Homebridge
 
